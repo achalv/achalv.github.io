@@ -107,9 +107,10 @@ li.fork{
 	color: #888;
 	padding: 10px 50px;
 }
-	li.fork a{
-		color: #888;
-	}
+
+li.fork a {
+	color: #888;
+}
 
 li .date{
 	color: #888;
@@ -117,4 +118,12 @@ li .date{
 	position: absolute;
 	left: -150px;
 	top: 50px;
+}
+
+p .tag {
+	color: #FFF;
+	background-color: #888;
+	border-radius: 3px;
+	padding: 3px;
+	
 }
