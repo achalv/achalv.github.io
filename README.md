@@ -17,7 +17,7 @@ Learn more about Github Pages at [pages.github.io](http://pages.github.io/ "page
 
 ### Add your name
 
-By default, githubTimeline uses 'Ryhan' as the initial github user name. You should modify the `title` tag as well as the value attribute of `input` in index.html to be your own github handle.
+By default, githubTimeline uses 'Achal' as the initial github user name. You should modify the `title` tag as well as the value attribute of `input` in index.html to be your own github handle.
 
 
 ### Register your application
