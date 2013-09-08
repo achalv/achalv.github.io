@@ -1,7 +1,7 @@
 githubTimeline
 ==============
 
-githubTimeline is a simple tool that chronologically lists a user's github repositories. It's very simple, and I welcome contributions.
+githubTimeline is a simple tool that lists a user's github repositories based on the original, by Ryhan Hassan.
 
 To see it in action, check out [achalv.github.io](http://achalv.github.io/ "achalv.github.io")
 
