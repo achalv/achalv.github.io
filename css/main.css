@@ -7,6 +7,10 @@ body{
 	padding: 100px;
 }
 
+#container {
+	width: 660px;
+}
+
 a{
 	color: #508720;
 	text-decoration: none;
