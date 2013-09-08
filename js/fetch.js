@@ -41,6 +41,7 @@ function githubHandler(data){
 			li.innerHTML+= "<div class='date'>"+date+"</div>";
 			li.setAttribute('class', 'original');
 			li.innerHTML+= "<p>" + repo.description + "</p>";
+			li.innerHTML+= "<p>" + data + "</p>";
 		}
 		ul.appendChild(li);
 		return true;
