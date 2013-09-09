@@ -36,7 +36,7 @@ function githubHandler(data){
 		li.innerHTML+= "<div class='metadata'>";
 		li.innerHTML+= "<p class='tag'>" + repo.language + "</p>";
 		var date = new Date(repo.updated_at);
-		li.innerHTML+= "<p class='last-updated'>Updated: " + date.getMonth() + '/' + date.getDate() + '/' +  date.getFullYear() + "</p>";
+		li.innerHTML+= "<p class='last-updated'>Updated: " + (date.getMonth()+1) + '/' + date.getDate() + '/' +  date.getFullYear() + "</p>";
 		li.innerHTML+= "</div>";
 
 		if (repo.fork == true){
