@@ -45,9 +45,9 @@ form p{
 }
 
 input[type="text"]{
-	background-color: #EEE;
+	background-color: #FFF;
 	border: none;
-	border-bottom: 1px solid #508720;
+	/*border-bottom: 1px solid #508720;*/
 	color: #222;
 	display: inline-block;
 	font-family: 'Source Sans Pro', sans-serif;
