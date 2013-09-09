@@ -121,9 +121,11 @@ li .date{
 }
 
 p .tag {
-	color: #FFF;
-	background-color: #EEE;
-	border-radius: 3px;
+	font-size: 12px;
+	color: #508720;
+	background-color: #FFF;
 	padding: 3px;
+	border-radius: 3px;
+	border: 1px solid #888;
 	display: inline;	
 }
