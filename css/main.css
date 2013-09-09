@@ -20,6 +20,7 @@ h2{
 	margin: 10px 0;
 	padding-top: 10px;
 }
+
 p{ 
 	margin: 10px 0;
 }
@@ -53,7 +54,7 @@ input[type="text"]{
 	font-size: 32px;
 	font-weight: bold;
 	outline: none;
-	width: 250px;
+	width: 95px;
 }
 
 input[type="text"]:focus{
@@ -120,12 +121,32 @@ li .date{
 	top: 50px;
 }
 
-p .tag {
+.tag {
 	font-size: 12px;
 	color: #508720;
 	background-color: #FFF;
 	padding: 3px;
 	border-radius: 3px;
 	border: 1px solid #888;
-	display: inline;	
+	display: inline-block;
+	vertical-align: 3px;	
+}
+.last-updated {
+	font-size: 12px;
+	color: #508720;
+	background-color: #FFF;
+	padding: 3px;
+	border-radius: 3px;
+	border: 1px solid #888;
+	display: inline-block;
+	vertical-align: 3px;
+	margin-left: 3px;
+}
+
+.metadata {
+	margin-top: -15px;
+}
+
+.no-metadata {
+	display: none;
 }

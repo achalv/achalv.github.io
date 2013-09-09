@@ -31,8 +31,13 @@ function githubHandler(data){
 
 	_.map(data, function(repo){
 		var li = document.createElement("li");
-		li.innerHTML+= "<h2><a target='_blank' href='"
+		li.innerHTML+= "<h2 class='repo-name'><a target='_blank' href='"
 						+repo.html_url+"'>" + repo.name + "</a></h2>";
+		li.innerHTML+= "<div class='metadata'>";
+		li.innerHTML+= "<p class='tag'>" + repo.language + "</p>";
+		var date = new Date(repo.updated_at);
+		li.innerHTML+= "<p class='last-updated'>Updated: " + date.getMonth() + '/' + date.getDate() + '/' +  date.getFullYear() + "</p>";
+		li.innerHTML+= "</div>";
 
 		if (repo.fork == true){
 			li.setAttribute('class', 'fork');
@@ -40,9 +45,9 @@ function githubHandler(data){
 			var date = (new Date(repo.created_at)).toDateString();
 			li.innerHTML+= "<div class='date'>"+date+"</div>";
 			li.setAttribute('class', 'original');
-			li.innerHTML+= "<p>" + repo.description + "</p>";
-			li.innerHTML+= "<p class='tag'>" + repo.language + "</p>";
+			li.innerHTML+= "<p class='description'>" + repo.description + "</p>";
 		}
+
 		ul.appendChild(li);
 		return true;
 	});
