@@ -36,6 +36,8 @@ form{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 32px;
 	padding: 50px;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 form p{
