@@ -35,13 +35,12 @@ function githubHandler(data){
 						+repo.html_url+"'>" + repo.name + "</a></h2>";
 		li.innerHTML+= "<div class='metadata'>";
 		
-		var language;
-		if (repo.language==="null") { language = ""; }
-		else { langauge = repo.language; }
+		var language = repo.langauge;
+		var date = new Date(repo.updated_at);
+		var date_lastUpdated = ((date.getMonth()+1) + '/' + date.getDate() + '/' +  date.getFullYear());
 		
 		li.innerHTML+= "<p class='tag'>" + language + "</p>";
-		var date = new Date(repo.updated_at);
-		li.innerHTML+= "<p class='last-updated'>Updated: " + (date.getMonth()+1) + '/' + date.getDate() + '/' +  date.getFullYear() + "</p>";
+		li.innerHTML+= "<p class='last-updated'>Updated: "  + date_lastUpdated + "</p>";
 		li.innerHTML+= "</div>";
 
 		if (repo.fork == true){
