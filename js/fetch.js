@@ -28,12 +28,17 @@ function githubHandler(data){
 
 	var ul = document.getElementById('repos');
 	ul.innerHTML = "";
-
+	
 	_.map(data, function(repo){
 		var li = document.createElement("li");
 		li.innerHTML+= "<h2 class='repo-name'><a target='_blank' href='"
 						+repo.html_url+"'>" + repo.name + "</a></h2>";
 		li.innerHTML+= "<div class='metadata'>";
+		
+		var language;
+		if (repo.language==null) { language = ""; }
+		else (langauge = repo.language);
+		
 		li.innerHTML+= "<p class='tag'>" + repo.language + "</p>";
 		var date = new Date(repo.updated_at);
 		li.innerHTML+= "<p class='last-updated'>Updated: " + (date.getMonth()+1) + '/' + date.getDate() + '/' +  date.getFullYear() + "</p>";
