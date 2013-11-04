@@ -36,7 +36,7 @@ function githubHandler(data){
 		li.innerHTML+= "<div class='metadata'>";
 		
 		var language;
-		if (repo.language==null) { language = ""; }
+		if (repo.language==="null") { language = ""; }
 		else { langauge = repo.language; }
 		
 		li.innerHTML+= "<p class='tag'>" + language + "</p>";
