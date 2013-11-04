@@ -37,7 +37,6 @@ function githubHandler(data){
 		
 		var language;
 		if (repo.language==null) { language = ""; }
-		else (langauge = repo.language);
 		
 		li.innerHTML+= "<p class='tag'>" + repo.language + "</p>";
 		var date = new Date(repo.updated_at);
