@@ -38,11 +38,10 @@ function githubHandler(data){
 		
 		var project_language = repo.langauge;
 		var date = new Date(repo.updated_at);
-		li.innerHTML+= "<p class='last-updated'>Updated: " + (date.getMonth()+1) + '/' + date.getDate() + '/' +  date.getFullYear() + "</p>";
-
 		var date_lastUpdated = ((date.getMonth()+1) + '/' + date.getDate() + '/' +  date.getFullYear());
 		
 		//li.innerHTML+= "<p class='tag'>" + project_language + "</p>";
+		li.innerHTML+= "<p class='last-updated'>Updated: "  + project_language + "</p>";
 		li.innerHTML+= "<p class='last-updated'>Updated: "  + date_lastUpdated + "</p>";
 		li.innerHTML+= "</div>";
 		li.innerHTML+= "<div class='gh-controls'><i class='fa fa-star star'></i><i class='fa fa-code-fork fork'></i></div>";
