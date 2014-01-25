@@ -34,7 +34,7 @@ function githubHandler(data){
 		li.innerHTML+= "<h2 class='repo-name'><a target='_blank' href='"
 						+repo.html_url+"'>" + repo.name + "'</a></h2>";
 						
-		li.innerHTML=+ "<div class='gh-controls'><i class='fa fa-star star'></i><i class='fa fa-code-fork fork'></i></div>";				
+		li.innerHTML+= "<div class='gh-controls'><i class='fa fa-star star'></i><i class='fa fa-code-fork fork'></i></div>";				
 		li.innerHTML+= "<div class='metadata'>";
 		
 		var project_language = repo.langauge;
