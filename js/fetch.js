@@ -33,8 +33,7 @@ function githubHandler(data){
 		var li = document.createElement("li");
 		li.innerHTML+= "<h2 class='repo-name'><a target='_blank' href='"
 						+repo.html_url+"'>" + repo.name + "</a></h2>";
-						
-		li.innerHTML+= "<div class='gh-controls'><i class='fa fa-star star'></i><i class='fa fa-code-fork fork'></i></div>";				
+										
 		li.innerHTML+= "<div class='metadata'>";
 		
 		var project_language = repo.langauge;
@@ -46,6 +45,7 @@ function githubHandler(data){
 		//li.innerHTML+= "<p class='tag'>" + project_language + "</p>";
 		li.innerHTML+= "<p class='last-updated'>Updated: "  + date_lastUpdated + "</p>";
 		li.innerHTML+= "</div>";
+		li.innerHTML+= "<div class='gh-controls'><i class='fa fa-star star'></i><i class='fa fa-code-fork fork'></i></div>";
 
 		if (repo.fork == true){
 			li.setAttribute('class', 'fork');
