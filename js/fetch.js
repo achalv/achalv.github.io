@@ -28,15 +28,23 @@ function githubHandler(data){
 
 	var ul = document.getElementById('repos');
 	ul.innerHTML = "";
-
+	
 	_.map(data, function(repo){
 		var li = document.createElement("li");
 		li.innerHTML+= "<h2 class='repo-name'><a target='_blank' href='"
 						+repo.html_url+"'>" + repo.name + "</a></h2>";
+						
+		li.innerHTML+= "<div class='gh-controls'><i class='fa fa-star star'></i><i class='fa fa-code-fork fork'></i></div>";				
 		li.innerHTML+= "<div class='metadata'>";
-		li.innerHTML+= "<p class='tag'>" + repo.language + "</p>";
+		
+		var project_language = repo.langauge;
 		var date = new Date(repo.updated_at);
 		li.innerHTML+= "<p class='last-updated'>Updated: " + (date.getMonth()+1) + '/' + date.getDate() + '/' +  date.getFullYear() + "</p>";
+
+		var date_lastUpdated = ((date.getMonth()+1) + '/' + date.getDate() + '/' +  date.getFullYear());
+		
+		//li.innerHTML+= "<p class='tag'>" + project_language + "</p>";
+		li.innerHTML+= "<p class='last-updated'>Updated: "  + date_lastUpdated + "</p>";
 		li.innerHTML+= "</div>";
 
 		if (repo.fork == true){

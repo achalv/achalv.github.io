@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
 	<title>achalv's GitHub Timeline</title>
-
-	<!--
-	<meta name="viewport" content="width=device-width, 
-				initial-scale=1.0, user-scalable=yes" />-->
-
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<script type="text/javascript" src="js/underscore.js"></script>
 	<script type="text/javascript" src="js/fetch.js"></script>
-
-	
 </head>
 <body>
 	<div id="container">
 		<header>
 			<form onsubmit="formHandler(); return false;">
-			github.com/<input id="username" type="text" placeholder="username" value="achalv" disabled />
-				<p>Here's my github timeline.</p>
+			timeline(github.com/<input id="username" type="text" placeholder="username" value="achalv" disabled />);
+				<p>A timeline of my GitHub repositories.</p>
 				<div class="github">
 					<iframe src="http://ghbtns.com/github-btn.html?user=achalv&repo=achalv.github.io&type=watch"
 		  			allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
