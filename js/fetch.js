@@ -39,7 +39,7 @@ function githubHandler(data){
 		var date = new Date(repo.updated_at);
 		var date_lastUpdated = ((date.getMonth()+1) + '/' + date.getDate() + '/' +  date.getFullYear());
 		
-		li.innerHTML+= "<p class='tag'>" + project_language + "</p>";
+		//li.innerHTML+= "<p class='tag'>" + project_language + "</p>";
 		li.innerHTML+= "<p class='last-updated'>Updated: "  + date_lastUpdated + "</p>";
 		li.innerHTML+= "</div>";
 
