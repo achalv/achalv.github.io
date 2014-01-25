@@ -151,6 +151,10 @@ li .date{
 	margin-top: -15px;
 }
 
+.gh-controls {
+	display: none;
+}
+
 .no-metadata {
 	display: none;
 }
