@@ -35,11 +35,11 @@ function githubHandler(data){
 						+repo.html_url+"'>" + repo.name + "</a></h2>";
 		li.innerHTML+= "<div class='metadata'>";
 		
-		var language = repo.langauge;
+		var project_language = repo.langauge;
 		var date = new Date(repo.updated_at);
 		var date_lastUpdated = ((date.getMonth()+1) + '/' + date.getDate() + '/' +  date.getFullYear());
 		
-		li.innerHTML+= "<p class='tag'>" + language + "</p>";
+		li.innerHTML+= "<p class='tag'>" + project_language + "</p>";
 		li.innerHTML+= "<p class='last-updated'>Updated: "  + date_lastUpdated + "</p>";
 		li.innerHTML+= "</div>";
 
