@@ -8,11 +8,10 @@ include 'random.php';
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 		<meta name="author" content="Achal Varma">
-        <meta name="description" content="Design-focused Engineer. I build and break a lot of things.">
+        	<meta name="description" content="Design-focused Engineer. I build and break a lot of things.">
 		<title>Achal Varma</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css">
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<script>
