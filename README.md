@@ -21,7 +21,7 @@ By default, githubTimeline uses 'Achal' as the initial github user name. You sho
 
 
 ### Register your application
-
+#### I'm not sure github requires you to do this any more...
 Github now requires your application is registered to access the API. Fortunately, this is very simple. Go to [your profile](https://github.com/settings/profile) and click on 'Applications'. Fill in the following:
 
 ```text
